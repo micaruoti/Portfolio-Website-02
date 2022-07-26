@@ -1,0 +1,586 @@
+/*Configurando pagina*/
+.contenedor {
+  width: 90%;
+  max-width: 1296px;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #212529;
+  height: 100vh;
+}
+
+/*Nav bar*/
+.navbarcolor {
+  background: #292b2e;
+}
+
+.nav-active {
+  color: #b05375 !important;
+  font-weight: bold;
+}
+
+.nav-boton {
+  text-align: left;
+  padding: 6px 16px;
+  background-color: #b05375;
+  border-radius: 50px;
+  text-decoration: none;
+  width: 140px;
+  text-align: center;
+  position: absolute;
+  right: 30px;
+}
+
+.nav-ultimo {
+  padding-right: 2rem;
+}
+
+.nav-link:hover {
+  color: #fab3b7 !important;
+}
+
+/*Inicio*/
+.menu-titulo h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu-soy {
+  color: #b05375;
+  font-weight: bold;
+}
+
+.menu-titulo h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.menu-titulo p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.img-soy {
+  text-align: center;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.inicio-info {
+  display: flex;
+  justify-content: center;
+}
+
+.card-inicio {
+  display: flex;
+  justify-content: space-around;
+  background-color: #292b2e;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 280px;
+  height: 80px;
+  border-radius: 8px;
+  padding: 10px;
+  align-items: center;
+}
+
+.card img {
+  width: 20%;
+}
+
+.info-card {
+  vertical-align: center;
+}
+
+.año-card {
+  color: #b05375;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.pa-info-card {
+  color: white;
+  margin: 0;
+}
+
+/*Sobre mi*/
+.sobremi-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobremi-img {
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.sobremi-img img {
+  width: 405px;
+  height: 405px;
+  border-radius: 50%;
+}
+
+.sobremi-titulo {
+  width: 60%;
+}
+
+.sobremi-titulo h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.sobremi-titulo h1 {
+  color: #b05375;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.sobremi-titulo p {
+  margin: 30px 0;
+  color: white;
+}
+
+.sobremi-boton {
+  text-decoration: none;
+  color: white;
+  background: #b05375;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9.19px 18.38px;
+  border-radius: 50px;
+}
+
+.sobremi-boton:hover {
+  color: #fab3b7 !important;
+}
+
+/*Educacion*/
+
+.educacion-titulo h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.educacion-titulo h1 {
+  color: #b05375;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.educacion-trabajos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #292b2e;
+}
+
+.card-body {
+  height: 170px;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  color: #b05375;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-text {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*Porfolio*/
+
+.portfolio-titulo h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.portfolio-titulo h4 {
+  color: #b05375;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.portfolio-titulo p {
+  color: white;
+  font-size: 14px;
+  width: 50%;
+}
+
+.portfolio-link {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.portfolio-link a {
+  color: #b05375;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#grid {
+  display: grid;
+  grid-template-areas:
+    "guiza1 guiza-contenido"
+    "welcome-contenido welcome-img"
+    "telecentro-img telcentro-contenido";
+
+  grid-template-rows: 290px 290px 290px;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 12px;
+  grid-row-gap: 40px;
+}
+
+#guiza1 {
+  grid-area: guiza1;
+}
+
+#guiza-contenido {
+  grid-area: guiza-contenido;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+#guiza-contenido h5,
+#welcome-contenido h5,
+#telcentro-contenido h5 {
+  font-size: 30px;
+  color: #b05375;
+  font-weight: bold;
+}
+
+#guiza-contenido p,
+#welcome-contenido p,
+#telcentro-contenido p {
+  font-size: 14px;
+  color: #4b4a4a;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#guiza-contenido a,
+#welcome-contenido a,
+#telcentro-contenido a {
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+  background-color: #b05375;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+#welcome-contenido {
+  grid-area: welcome-contenido;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+#welcome-img {
+  grid-area: welcome-img;
+}
+
+#telecentro-img {
+  grid-area: telecentro-img;
+}
+
+#telcentro-contenido {
+  grid-area: telcentro-contenido;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.sobremi-svg {
+  vertical-align: top;
+  padding-left: 12px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  background-color: #292b2e;
+}
+
+.redes-footer {
+  height: 80px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.redes-footer a {
+  background-color: #b05375;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.redes-footer a i {
+  margin-top: 35px;
+}
+
+/*Contactame*/
+.contactame {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.contactame-info h4 {
+  font-size: 20px;
+  color: #b05375;
+  margin-bottom: 40px;
+}
+
+.contactame-iconos {
+  padding-left: 0px;
+}
+
+.contactame-info ul li {
+  list-style: none;
+  margin-bottom: 35px;
+  color: #939191;
+  align-items: center;
+}
+
+.contactame-info ul img {
+  padding-right: 15px;
+}
+
+.contactame-info {
+  width: 400px;
+  height: 400px;
+  background-color: #292b2e;
+  border-top-left-radius: 19.85px;
+  border-bottom-left-radius: 19.85px;
+  padding: 25px 45px;
+}
+
+.contactame-form form input[type="text"],
+.contactame-form form input[type="email"],
+.contactame-form form textarea {
+  width: 100%;
+  height: 27px;
+  background-color: #f1f1f1;
+  border: 0;
+  border-radius: 4.81px;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.contactame-form form textarea {
+  height: 70px;
+}
+
+.contactame-form form input[type="submit"] {
+  width: 97px;
+  height: 39;
+  background-color: #b05375;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 50px;
+  border: 0;
+}
+
+.contactame-form {
+  padding: 25px 45px;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-top-right-radius: 19.85px;
+  border-bottom-right-radius: 19.85px;
+  font-size: 14px;
+  color: #292b2e;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  /*Responsive Nav*/
+  .nav-boton {
+    left: 10px;
+    top: 210px;
+  }
+
+  div.container {
+    margin-bottom: 50px;
+  }
+
+  /*Responsive Inicio*/
+
+  .menu-titulo h1 {
+    font-size: 18px;
+  }
+  .inicio-info {
+    flex-direction: column;
+  }
+
+  /*Responsive Sobre mi*/
+  .sobremi-inicio {
+    flex-direction: column;
+  }
+
+  .sobremi-img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .sobremi-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sobremi-titulo {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /*Responsive Educación*/
+  .educacion-trabajos {
+    flex-direction: column;
+  }
+
+  .card {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .zoom {
+    transition: transform 0.2s !important;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5) !important;
+  }
+
+  /*Resposinve Portfolio*/
+  .portfolio-titulo p {
+    width: 100%;
+  }
+
+  .portfolio-link {
+    margin-top: 20px;
+  }
+
+  #grid {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "guiza1"
+      "guiza-contenido"
+      "welcome-contenido"
+      "welcome-img"
+      "telecentro-img"
+      "telcentro-contenido";
+
+    grid-template-rows: 220px;
+
+    grid-row-gap: 20px;
+    margin: auto;
+  }
+
+  #guiza1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-guiza {
+    width: 100%;
+  }
+
+  .welcome-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .img-welcome {
+    width: 100%;
+  }
+
+  .telecentro-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-telecentro {
+    width: 100%;
+  }
+
+  /*Responisve CONTACTO*/
+  .contactame {
+    flex-direction: column;
+  }
+
+  .contactame-info {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    height: 250px;
+    padding: 20px 39px;
+  }
+
+  .contactame-form {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    padding: 20px 39px;
+  }
+}
