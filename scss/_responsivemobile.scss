@@ -1,0 +1,140 @@
+/*Responsive para el celular*/
+@media (max-width: 480px) {
+  /*Responsive Nav*/
+  .nav-boton-contacto {
+    margin-top: 10px;
+  }
+
+  div.container {
+    margin-bottom: 10px;
+  }
+
+  /*Responsive Inicio*/
+
+  .menu-titulo h1 {
+    font-size: 18px;
+  }
+
+  .inicio-info {
+    flex-direction: column;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("img/bars-solid.svg");
+  }
+  /*Responsive Sobre mi*/
+  .sobremi-inicio {
+    flex-direction: column;
+  }
+
+  .sobremi-img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .sobremi-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sobremi-titulo {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /*Responsive Educación*/
+  .educacion-trabajos {
+    flex-direction: column;
+  }
+
+  .card {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .zoom {
+    transition: transform 0.2s !important;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5) !important;
+  }
+
+  /*Resposinve Portfolio*/
+  .portfolio-titulo p {
+    width: 100%;
+  }
+
+  .portfolio-link {
+    margin-top: 20px;
+  }
+
+  #grid {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "guiza1"
+      "guiza-contenido"
+      "welcome-contenido"
+      "welcome-img"
+      "telecentro-img"
+      "telcentro-contenido";
+
+    grid-template-rows: 220px;
+
+    grid-row-gap: 20px;
+    margin: auto;
+  }
+
+  #guiza1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-guiza {
+    width: 100%;
+  }
+
+  .welcome-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .img-welcome {
+    width: 100%;
+  }
+
+  .telecentro-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-telecentro {
+    width: 100%;
+  }
+
+  /*Responisve CONTACTO*/
+  .contactame {
+    flex-direction: column;
+  }
+
+  .contactame-info {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    height: 250px;
+    padding: 20px 39px;
+  }
+
+  .contactame-form {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    padding: 20px 39px;
+  }
+}

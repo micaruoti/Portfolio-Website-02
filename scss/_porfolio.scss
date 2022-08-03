@@ -1,0 +1,111 @@
+/*Porfolio*/
+
+.portfolio-titulo h3 {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.portfolio-titulo h4 {
+  color: #b05375;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.portfolio-titulo p {
+  color: white;
+  font-size: 0.875rem;
+  width: 50%;
+}
+
+.portfolio-link {
+  text-align: right;
+  margin-bottom: 1.875;
+}
+
+.portfolio-link a {
+  color: #b05375;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+#grid {
+  display: grid;
+  grid-template-areas:
+    "guiza1 guiza-contenido"
+    "welcome-contenido welcome-img"
+    "telecentro-img telcentro-contenido";
+
+  grid-template-rows: 290px 290px 290px;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 12px;
+  grid-row-gap: 40px;
+}
+
+#guiza1 {
+  grid-area: guiza1;
+}
+
+#guiza-contenido {
+  grid-area: guiza-contenido;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+#guiza-contenido h5,
+#welcome-contenido h5,
+#telcentro-contenido h5 {
+  font-size: 30px;
+  color: #b05375;
+  font-weight: bold;
+}
+
+#guiza-contenido p,
+#welcome-contenido p,
+#telcentro-contenido p {
+  font-size: 14px;
+  color: #4b4a4a;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#guiza-contenido a,
+#welcome-contenido a,
+#telcentro-contenido a {
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+  background-color: #b05375;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+#welcome-contenido {
+  grid-area: welcome-contenido;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+#welcome-img {
+  grid-area: welcome-img;
+}
+
+#telecentro-img {
+  grid-area: telecentro-img;
+}
+
+#telcentro-contenido {
+  grid-area: telcentro-contenido;
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+}
+
+.sobremi-svg {
+  vertical-align: top;
+  padding-left: 0.75rem;
+}

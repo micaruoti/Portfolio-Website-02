@@ -1,0 +1,72 @@
+@import "variables";
+
+// Estilos Inicio
+
+.menu-titulo {
+  h3 {
+    @include h3-personalizado();
+  }
+
+  .menu-soy {
+    color: $color-primario-1;
+    font-weight: bold;
+  }
+
+  h1 {
+    @include h1-personalizado();
+    color: white;
+    text-align: center;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    font-size: $p;
+    margin-top: 1rem;
+  }
+
+  .img-soy {
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.inicio-info {
+  display: flex;
+  justify-content: center;
+}
+
+.card-inicio {
+  display: flex;
+  justify-content: space-around;
+  background-color: #292b2e;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  width: 17.5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  align-items: center;
+}
+
+.card img {
+  width: 20%;
+}
+
+.info-card {
+  vertical-align: center;
+}
+
+.año-card {
+  color: $color-primario-1;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.pa-info-card {
+  color: white;
+  margin: 0;
+}

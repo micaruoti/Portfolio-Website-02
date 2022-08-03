@@ -1,0 +1,55 @@
+/*Educacion*/
+
+.educacion-titulo h3 {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  color: white;
+  text-align: center;
+}
+
+.educacion-titulo h1 {
+  color: #b05375;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.educacion-trabajos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.25rem;
+}
+
+.card {
+  border-radius: 0.625rem;
+  background-color: #292b2e;
+}
+
+.card-body {
+  height: 10.625rem;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  color: #b05375;
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.card-text {
+  color: white;
+  font-size: 0.875rem;
+  text-align: center;
+}
