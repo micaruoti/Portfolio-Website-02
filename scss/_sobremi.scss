@@ -1,4 +1,7 @@
+@import "variables";
+
 /*Sobre mi*/
+
 .sobremi-inicio {
   display: flex;
   justify-content: center;
@@ -9,48 +12,37 @@
   width: 50%;
   margin-top: 2.5rem;
   margin-left: 3.125rem;
-}
 
-.sobremi-img img {
-  width: 25.313rem;
-  height: 25.313rem;
-  border-radius: 50%;
+  img {
+    width: 25.313rem;
+    height: 25.313rem;
+    border-radius: 50%;
+  }
 }
 
 .sobremi-titulo {
   width: 60%;
-}
 
-.sobremi-titulo h3 {
-  color: white;
-  font-size: 1.125rem;
-  font-weight: 400;
-  margin-top: 1.25rem;
-}
+  h3 {
+    @include h3-personalizado();
+    text-align: left;
+  }
 
-.sobremi-titulo h1 {
-  color: #b05375;
-  font-weight: bold;
-  font-size: 1.625rem;
-  margin-top: 1.25rem;
-}
+  h1 {
+    @include h1-personalizado();
+  }
 
-.sobremi-titulo p {
-  margin-top: 1.7rem;
-  margin-bottom: 2rem;
-  color: white;
+  p {
+    @include p-personalizado();
+  }
 }
 
 .sobremi-boton {
-  text-decoration: none;
-  color: white;
-  background: #b05375;
-  font-size: 1rem;
-  font-weight: 400;
+  @extend .nav-boton;
   padding: 0.574rem 1.149rem;
   border-radius: 50px;
-}
 
-.sobremi-boton:hover {
-  color: #fab3b7 !important;
+  &:hover {
+    color: $color-secundario !important;
+  }
 }

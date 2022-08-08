@@ -1,32 +1,32 @@
+@import "variables";
+
 /*Porfolio*/
 
-.portfolio-titulo h3 {
-  margin-top: 1.25rem;
-  font-size: 1.125rem;
-  color: white;
-}
+.portfolio-titulo {
+  h3 {
+    @include h3-personalizado();
+    text-align: left;
+  }
 
-.portfolio-titulo h4 {
-  color: #b05375;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
+  h1 {
+    @include h1-personalizado();
+  }
 
-.portfolio-titulo p {
-  color: white;
-  font-size: 0.875rem;
-  width: 50%;
+  p {
+    @include p-personalizado;
+    width: 50%;
+  }
 }
 
 .portfolio-link {
   text-align: right;
-  margin-bottom: 1.875;
-}
+  margin-bottom: 1.875rem;
 
-.portfolio-link a {
-  color: #b05375;
-  text-decoration: none;
-  font-size: 0.875rem;
+  a {
+    color: $color-primario-1;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
 }
 
 #grid {
@@ -53,34 +53,36 @@
   padding: 40px;
 }
 
-#guiza-contenido h5,
-#welcome-contenido h5,
-#telcentro-contenido h5 {
-  font-size: 30px;
-  color: #b05375;
-  font-weight: bold;
-}
+#guiza-contenido,
+#welcome-contenido,
+#telcentro-contenido {
+  h5 {
+    font-size: map-get($mapPorfolio, h5);
+    color: $color-primario-1;
+    font-weight: bold;
+  }
 
-#guiza-contenido p,
-#welcome-contenido p,
-#telcentro-contenido p {
-  font-size: 14px;
-  color: #4b4a4a;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
+  p {
+    font-size: map-get($mapPorfolio, p);
+    color: #4b4a4a;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
 
-#guiza-contenido a,
-#welcome-contenido a,
-#telcentro-contenido a {
-  text-decoration: none;
-  width: 100px;
-  height: 40px;
-  background-color: #b05375;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 12px;
+  a {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background-color: $color-primario-1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: map-get($mapPorfolio, a);
+  }
+
+  a:hover {
+    color: $color-secundario !important;
+  }
 }
 
 #welcome-contenido {

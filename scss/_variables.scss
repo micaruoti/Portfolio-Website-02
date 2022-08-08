@@ -3,6 +3,7 @@
 // Color
 $color-primario-1: #b05375;
 $color-secundario: #fab3b7;
+$fondo-secundario: #292b2e;
 
 //Font-size
 $h3: 1.125rem;
@@ -20,7 +21,8 @@ $boton-fz: 1rem;
   margin-top: 1.25rem;
 }
 
-@mixin h1-personalizado($color-primario-1: #b05375) {
+@mixin h1-personalizado {
+  color: $color-primario-1;
   font-weight: bold;
   font-size: 1.625rem;
   margin-top: 1.25rem;
@@ -31,3 +33,10 @@ $boton-fz: 1rem;
   margin-bottom: 2rem;
   color: white;
 }
+
+//Maps
+$mapPorfolio: (
+  h5: 30px,
+  p: 14px,
+  a: 12px,
+);

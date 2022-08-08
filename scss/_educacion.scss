@@ -1,17 +1,16 @@
+@import "variables";
+
 /*Educacion*/
 
-.educacion-titulo h3 {
-  margin-top: 1.25rem;
-  font-size: 1.125rem;
-  color: white;
-  text-align: center;
-}
+.educacion-titulo {
+  h3 {
+    @include h3-personalizado();
+  }
 
-.educacion-titulo h1 {
-  color: #b05375;
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: center;
+  h1 {
+    @include h1-personalizado();
+    text-align: center;
+  }
 }
 
 .educacion-trabajos {
@@ -23,6 +22,10 @@
 .card {
   border-radius: 0.625rem;
   background-color: #292b2e;
+
+  img {
+    width: 100%;
+  }
 }
 
 .card-body {
@@ -35,10 +38,6 @@
 
 .zoom:hover {
   transform: scale(1.5);
-}
-
-.card img {
-  width: 100%;
 }
 
 .card-title {
