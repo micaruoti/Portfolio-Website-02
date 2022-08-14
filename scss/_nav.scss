@@ -11,7 +11,7 @@
 }
 
 .navbar-light {
-  color: white;
+  color: $screen-friendly-white;
 }
 
 .nav-boton {
@@ -22,13 +22,22 @@
   text-decoration: none;
   width: 8.75rem;
   text-align: center;
-  color: white;
+  color: $screen-friendly-white;
+
+ &:hover {
+color: $color-secundario  !important;
+background-color: rgba($color: $color-primario-1, $alpha: 0.32);
 }
+}
+
+
 
 .nav-ultimo {
   padding-right: 2rem;
 }
 
 .nav-link:hover {
-  color: $color-secundario !important;
+color: $color-secundario !important;
+background-color: rgba($color: $color-primario-1, $alpha: 0.32);
+border-radius: 8px;
 }

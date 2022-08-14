@@ -10,7 +10,7 @@
 
 .sobremi-img {
   width: 50%;
-  margin-top: 2.5rem;
+  margin-top: 1.6rem;
   margin-left: 3.125rem;
 
   img {
@@ -45,4 +45,9 @@
   &:hover {
     color: $color-secundario !important;
   }
+}
+
+.sobremi-svg {
+  vertical-align: top;
+  padding-left: 0.75rem;
 }

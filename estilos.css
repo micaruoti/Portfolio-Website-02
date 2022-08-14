@@ -22,7 +22,7 @@ body {
   font-weight: bold; }
 
 .navbar-light {
-  color: white; }
+  color: #f1f1f1; }
 
 .nav-boton, .sobremi-boton, .contactame-form form input[type="submit"] {
   text-align: left;
@@ -32,16 +32,21 @@ body {
   text-decoration: none;
   width: 8.75rem;
   text-align: center;
-  color: white; }
+  color: #f1f1f1; }
+  .nav-boton:hover, .sobremi-boton:hover, .contactame-form form input:hover[type="submit"] {
+    color: #fab3b7 !important;
+    background-color: rgba(176, 83, 117, 0.32); }
 
 .nav-ultimo {
   padding-right: 2rem; }
 
 .nav-link:hover {
-  color: #fab3b7 !important; }
+  color: #fab3b7 !important;
+  background-color: rgba(176, 83, 117, 0.32);
+  border-radius: 8px; }
 
 .menu-titulo h3 {
-  color: white;
+  color: #f1f1f1;
   font-size: 1.125rem;
   font-weight: 400;
   text-align: center;
@@ -111,7 +116,7 @@ body {
 
 .sobremi-img {
   width: 50%;
-  margin-top: 2.5rem;
+  margin-top: 1.6rem;
   margin-left: 3.125rem; }
   .sobremi-img img {
     width: 25.313rem;
@@ -121,7 +126,7 @@ body {
 .sobremi-titulo {
   width: 60%; }
   .sobremi-titulo h3 {
-    color: white;
+    color: #f1f1f1;
     font-size: 1.125rem;
     font-weight: 400;
     text-align: center;
@@ -135,7 +140,7 @@ body {
   .sobremi-titulo p {
     margin-top: 1.7rem;
     margin-bottom: 2rem;
-    color: white; }
+    color: #f1f1f1; }
 
 .sobremi-boton {
   padding: 0.574rem 1.149rem;
@@ -143,9 +148,13 @@ body {
   .sobremi-boton:hover {
     color: #fab3b7 !important; }
 
+.sobremi-svg {
+  vertical-align: top;
+  padding-left: 0.75rem; }
+
 /*Educacion*/
 .educacion-titulo h3 {
-  color: white;
+  color: #f1f1f1;
   font-size: 1.125rem;
   font-weight: 400;
   text-align: center;
@@ -167,7 +176,8 @@ body {
   border-radius: 0.625rem;
   background-color: #292b2e; }
   .card img {
-    width: 100%; }
+    width: 286px;
+    border-radius: 0.25rem; }
 
 .card-body {
   height: 10.625rem; }
@@ -191,7 +201,7 @@ body {
 
 /*Porfolio*/
 .portfolio-titulo h3 {
-  color: white;
+  color: #f1f1f1;
   font-size: 1.125rem;
   font-weight: 400;
   text-align: center;
@@ -207,16 +217,18 @@ body {
 .portfolio-titulo p {
   margin-top: 1.7rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #f1f1f1;
   width: 50%; }
 
 .portfolio-link {
   text-align: right;
   margin-bottom: 1.875rem; }
   .portfolio-link a {
-    color: #b05375;
+    color: #fab3b7;
     text-decoration: none;
     font-size: 0.875rem; }
+    .portfolio-link a:hover {
+      color: #fab3b7 !important; }
 
 #grid {
   display: grid;
@@ -231,7 +243,7 @@ body {
 
 #guiza-contenido {
   grid-area: guiza-contenido;
-  background-color: white;
+  background-color: #f1f1f1;
   border-radius: 20px;
   padding: 40px; }
 
@@ -257,7 +269,7 @@ body {
   width: 100px;
   height: 40px;
   background-color: #b05375;
-  color: white;
+  color: #f1f1f1;
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 12px; }
@@ -265,13 +277,14 @@ body {
 #guiza-contenido a:hover,
 #welcome-contenido a:hover,
 #telcentro-contenido a:hover {
-  color: #fab3b7 !important; }
+  color: #fab3b7 !important;
+  background-color: #292b2e; }
 
 #welcome-contenido {
   grid-area: welcome-contenido;
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px; }
+  background-color: #f1f1f1;
+  border-radius: 1.25rem;
+  padding: 2.5rem; }
 
 #welcome-img {
   grid-area: welcome-img; }
@@ -281,13 +294,9 @@ body {
 
 #telcentro-contenido {
   grid-area: telcentro-contenido;
-  background-color: white;
+  background-color: #f1f1f1;
   border-radius: 1.25rem;
   padding: 2.5rem; }
-
-.sobremi-svg {
-  vertical-align: top;
-  padding-left: 0.75rem; }
 
 /*Contactame*/
 .contactame {
@@ -312,7 +321,7 @@ body {
   .contactame-info ul li {
     list-style: none;
     margin-bottom: 2.188rem;
-    color: #939191;
+    color: #f1f1f1;
     align-items: center; }
   .contactame-info ul img {
     padding-right: 0.938rem; }
@@ -344,6 +353,9 @@ body {
     height: 39;
     padding: 9px 20px;
     border: 0; }
+    .contactame-form form input[type="submit"]:hover {
+      color: #fab3b7;
+      background-color: #292b2e; }
 
 .menu-icon {
   display: none; }
@@ -356,14 +368,16 @@ footer {
 .redes-footer {
   height: 5rem;
   text-align: center;
-  margin-top: 3rem; }
+  margin-top: 2.6rem; }
   .redes-footer a {
     background-color: #b05375;
-    color: white;
+    color: #f1f1f1;
     margin-top: 1.25rem;
     padding: 0.625rem;
     border-radius: 0.375rem;
     margin-right: 0.625rem; }
+    .redes-footer a:hover {
+      background-color: rgba(176, 83, 117, 0.32); }
   .redes-footer i {
     margin-top: 2.188rem; }
 
@@ -389,9 +403,9 @@ footer {
     width: 100%;
     height: 100%;
     margin-top: 20px; }
-  .sobremi-img img {
-    width: 100%;
-    height: 100%; }
+    .sobremi-img img {
+      width: 100%;
+      height: 100%; }
   .sobremi-titulo {
     margin-top: 10px;
     width: 100%; }
@@ -403,10 +417,6 @@ footer {
     justify-content: center;
     width: 100%;
     margin: 20px auto; }
-  .zoom {
-    transition: transform 0.2s !important; }
-  .zoom:hover {
-    transform: scale(1.5) !important; }
   /*Resposinve Portfolio*/
   .portfolio-titulo p {
     width: 100%; }

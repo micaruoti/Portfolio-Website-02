@@ -4,6 +4,8 @@
 $color-primario-1: #b05375;
 $color-secundario: #fab3b7;
 $fondo-secundario: #292b2e;
+$screen-friendly-white: #f1f1f1;
+$p-gray: #4b4a4a;
 
 //Font-size
 $h3: 1.125rem;
@@ -14,7 +16,7 @@ $boton-fz: 1rem;
 //Mixins
 
 @mixin h3-personalizado {
-  color: white;
+  color: $screen-friendly-white;
   font-size: 1.125rem;
   font-weight: 400;
   text-align: center;
@@ -31,7 +33,7 @@ $boton-fz: 1rem;
 @mixin p-personalizado {
   margin-top: 1.7rem;
   margin-bottom: 2rem;
-  color: white;
+  color: $screen-friendly-white;
 }
 
 //Maps

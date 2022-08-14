@@ -32,11 +32,11 @@
     width: 100%;
     height: 100%;
     margin-top: 20px;
-  }
 
-  .sobremi-img img {
-    width: 100%;
-    height: 100%;
+img {
+width: 100%;
+  height: 100%;
+}
   }
 
   .sobremi-titulo {
@@ -55,15 +55,7 @@
     width: 100%;
     margin: 20px auto;
   }
-
-  .zoom {
-    transition: transform 0.2s !important;
-  }
-
-  .zoom:hover {
-    transform: scale(1.5) !important;
-  }
-
+ 
   /*Resposinve Portfolio*/
   .portfolio-titulo p {
     width: 100%;
