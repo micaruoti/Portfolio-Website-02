@@ -1,19 +1,22 @@
-/*Responsive para el celular*/
+//Responsive para el celular
+
 @media (max-width: 480px) {
-  /*Responsive Nav*/
+
+  //Responsive nav bar
   .nav-boton-contacto {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 
   div.container {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
-  /*Responsive Inicio*/
-
-  .menu-titulo h1 {
-    font-size: 18px;
-  }
+  //Responsive Inicio
+  .menu-titulo {
+   h1 {
+    font-size: 1.125rem;
+  } 
+}
 
   .inicio-info {
     flex-direction: column;
@@ -22,29 +25,30 @@
   .navbar-light .navbar-toggler-icon {
     background-image: url("img/bars-solid.svg");
   }
-  /*Responsive Sobre mi*/
+
+  //Responsive sobre mi
   .sobremi-inicio {
     flex-direction: column;
   }
 
   .sobremi-img {
     margin: auto;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
+    width: 21rem;
+    height: 21rem;
+    margin-top: 1.25rem;
 
-img {
-width: 100%;
+  .img-sobremi {
+  width: 100%;
   height: 100%;
 }
   }
 
   .sobremi-titulo {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: 100%;
   }
 
-  /*Responsive Educación*/
+  //Responsive educación
   .educacion-trabajos {
     flex-direction: column;
   }
@@ -53,35 +57,33 @@ width: 100%;
     text-align: center;
     justify-content: center;
     width: 100%;
-    margin: 20px auto;
+    margin: 1.25rem auto;
   }
  
-  /*Resposinve Portfolio*/
+  //Resposive portfolio
   .portfolio-titulo p {
     width: 100%;
   }
 
   .portfolio-link {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
-  #grid {
+
+.grid {
     grid-template-columns: 100%;
     grid-template-areas:
       "guiza1"
       "guiza-contenido"
+"welcome-img"
       "welcome-contenido"
-      "welcome-img"
       "telecentro-img"
       "telcentro-contenido";
 
-    grid-template-rows: 220px;
+    grid-template-rows: 15rem;
+    grid-row-gap: 0.3rem;
 
-    grid-row-gap: 20px;
-    margin: auto;
-  }
-
-  #guiza1 {
+  .guiza1 {
     width: 100%;
     height: 100%;
   }
@@ -90,43 +92,165 @@ width: 100%;
     width: 100%;
   }
 
-  .welcome-img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-  }
+.guiza-contenido {
+margin-top: 0.313rem;
+height:20.625rem;
+}
 
-  .img-welcome {
-    width: 100%;
-  }
+.welcome-img {
+margin-top: 3.438rem;
+width: 100%;
+  height: 15rem;
+}
 
-  .telecentro-img {
-    width: 100%;
-    height: 100%;
-  }
+.img-welcome {
+width: 100%;
+}
 
-  .img-telecentro {
-    width: 100%;
-  }
+.telecentro-img {
+height: 15rem;
+}
 
-  /*Responisve CONTACTO*/
+.img-telecentro {
+margin-top: 1.875rem;
+height: 15rem;
+}
+
+.telcentro-contenido {
+height: 23.125rem;
+margin-top: -30px;
+}
+}
+
+
+  //Responsive contactame
   .contactame {
     flex-direction: column;
   }
 
   .contactame-info {
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
     border-bottom-left-radius: 0px;
-    height: 250px;
-    padding: 20px 39px;
+    height: 16rem;
+    padding: 1.25rem 2.438rem;
   }
 
   .contactame-form {
     width: 100%;
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 20px;
-    padding: 20px 39px;
+    border-bottom-left-radius: 1.25rem;
+    padding: 1.25rem 2.438rem;
   }
+}
+
+
+//Responsive 991px
+
+@media only screen and (min-width:480px) and (max-width:992px) {
+  //Responsive nav bar
+    .nav-boton-contacto {
+      margin-top: 0.625rem;
+    }
+  
+    div.container {
+      margin-bottom: 0.625rem;
+    }
+  
+    //Responsive inicio
+  
+    .menu-titulo h1 {
+      font-size: 1.125rem;
+    }
+  
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("img/bars-solid.svg");
+    }
+
+.inicio-info {
+flex-direction: column;
+justify-content: center;
+
+.card-inicio {
+margin: 1rem auto;
+}
+}
+
+
+//Responsive sobre mi
+
+.sobremi-img {
+width: 18rem;
+  height: 18rem;
+
+.img-sobremi  {
+  width: 18rem;
+  height:18rem;
+}
+}
+
+//Responsive educacion
+.educacion-trabajos {
+flex-direction: column;
+
+.card{
+margin: 1.25rem auto;
+}
+}
+
+
+//Responsive porfolio
+.grid {
+
+grid-template-columns: 100%;
+  grid-template-areas:
+    "guiza1"
+    "guiza-contenido"
+    "welcome-img"
+    "welcome-contenido"
+    "telecentro-img"
+    "telcentro-contenido";
+
+  grid-row-gap: 1rem;
+  grid-auto-rows:18rem;
+  grid-template-columns: 100%;
+
+.welcome-img, .telecentro-img {
+margin-top: 1.25rem;
+}
+}
+}
+
+//Responsive para 540px
+
+@media screen and (min-width:480px) and (max-width:710px) {
+.sobremi-inicio {
+flex-direction: column;
+}
+
+.contactame {
+flex-direction: column;
+
+.contactame-info,
+.contactame-form {
+width: 90%;
+margin: auto;
+}
+
+    .contactame-info {
+      border-top-left-radius: 1.25rem;
+      border-top-right-radius: 1.25rem;
+      border-bottom-left-radius: 0px;
+      height: 16rem;
+      padding: 1.25rem 2.438rem;
+    }
+  
+    .contactame-form {
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 1.25rem;
+      padding: 1.25rem 2.438rem;
+    }
+
+}
 }

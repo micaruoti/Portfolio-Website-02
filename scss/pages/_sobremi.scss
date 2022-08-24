@@ -1,6 +1,6 @@
 @import "variables";
 
-/*Sobre mi*/
+//Estilos sobre mi
 
 .sobremi-inicio {
   display: flex;
@@ -10,13 +10,20 @@
 
 .sobremi-img {
   width: 50%;
+    width: 25.313rem;
+      height: 25.313rem;
   margin-top: 1.6rem;
   margin-left: 3.125rem;
+max-width: 100%;
+margin-right: 4rem;
 
-  img {
+.img-sobremi {
     width: 25.313rem;
     height: 25.313rem;
     border-radius: 50%;
+    background-image: url(img/ruotimicaela.png);
+    background-size: cover;
+   max-width: 100%;
   }
 }
 

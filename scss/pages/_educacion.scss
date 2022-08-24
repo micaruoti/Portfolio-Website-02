@@ -1,6 +1,6 @@
 @import "variables";
 
-/*Educacion*/
+//Estilos educacion
 
 .educacion-titulo {
   h3 {
@@ -22,10 +22,12 @@
 .card {
   border-radius: 0.625rem;
   background-color: #292b2e;
+margin-right: 1rem;
 
   img {
     width: 286px;
 border-radius: 0.25rem;
+max-width: 100%;
   }
 }
 
